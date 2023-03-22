@@ -124,6 +124,8 @@ public class PlayerControl : MonoBehaviour
 
     private void OnCollisionStay(Collision Other)
     {
+        //ContactPoint contact = Other.contacts[0];
+        //Debug.DrawRay(contact.point, contact.normal, Color.red, 1.25f);
         if (Other.gameObject.tag == "Wall")
         {
             Debug.Log("harder");
