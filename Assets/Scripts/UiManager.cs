@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class UIMeneger : MonoBehaviour
+public class UiManager : MonoBehaviour
 {
     public GameObject PauseWindow;
     public void StartGame()
