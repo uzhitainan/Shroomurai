@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 647677402}
   - component: {fileID: 647677401}
   - component: {fileID: 647677403}
+  - component: {fileID: 647677404}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -631,6 +632,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 926c737dc5d77024c8471e366f0aae01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &647677404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647677399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31a974847078a640a45abc05fb8d3eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseWindow: {fileID: 0}
+  Vpanel: {fileID: 0}
 --- !u!1 &900811634
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,8 +730,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 647677403}
-        m_TargetAssemblyTypeName: UIMeneger, Assembly-CSharp
+      - m_Target: {fileID: 647677404}
+        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -848,7 +863,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 964892577}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 647677404}
+        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
+        m_MethodName: Vpanelopen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &964892577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,8 +1339,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 647677403}
-        m_TargetAssemblyTypeName: UIMeneger, Assembly-CSharp
+      - m_Target: {fileID: 647677404}
+        m_TargetAssemblyTypeName: UiManager, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
